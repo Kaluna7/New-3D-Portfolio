@@ -17,6 +17,9 @@ importers:
       preact:
         specifier: ^10.26.5
         version: 10.26.8
+      preact-router:
+        specifier: ^4.1.2
+        version: 4.1.2(preact@10.26.8)
       tailwindcss:
         specifier: ^4.1.8
         version: 4.1.8
@@ -760,6 +763,11 @@ packages:
     resolution: {integrity: sha512-QSa9EBe+uwlGTFmHsPKokv3B/oEMQZxfqW0QqNCyhpa6mB1afzulwn8hihglqAb2pOw+BJgNlmXQ8la2VeHB7w==}
     engines: {node: ^10 || ^12 || >=14}
 
+  preact-router@4.1.2:
+    resolution: {integrity: sha512-uICUaUFYh+XQ+6vZtQn1q+X6rSqwq+zorWOCLWPF5FAsQh3EJ+RsDQ9Ee+fjk545YWQHfUxhrBAaemfxEnMOUg==}
+    peerDependencies:
+      preact: '>=10'
+
   preact@10.26.8:
     resolution: {integrity: sha512-1nMfdFjucm5hKvq0IClqZwK4FJkGXhRrQstOQ3P4vp8HxKrJEMFcY6RdBRVTdfQS/UlnX6gfbPuTvaqx/bDoeQ==}
 
@@ -1472,6 +1480,10 @@ snapshots:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  preact-router@4.1.2(preact@10.26.8):
+    dependencies:
+      preact: 10.26.8
 
   preact@10.26.8: {}
 

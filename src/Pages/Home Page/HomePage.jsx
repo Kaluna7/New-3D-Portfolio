@@ -1,12 +1,19 @@
-import earthimg from '../../assets/images/earth.png'
+import { route } from 'preact-router';
 
+export default function HomePage() {
+  const handleClick = () => {
+    localStorage.setItem('shouldPlayMusic', 'true');
+    route('/dashboard');
+  };
 
-export default function HomePage(){
-    return(
-        <div className="bg-blue-500 h-screen flex flex-row items-center justify-center">
-            <img src={earthimg}
-            className='w-[500px] h-[500px]'
-            />
-        </div>
-    );
+  return (
+    <div className="bg-black h-screen flex flex-col items-center justify-center text-white gap-10">
+      <button
+        className="bg-blue-500 px-6 py-3 rounded-xl hover:bg-blue-600"
+        onClick={handleClick}
+      >
+        Explore
+      </button>
+    </div>
+  );
 }

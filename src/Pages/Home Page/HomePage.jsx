@@ -2,7 +2,6 @@ import { route } from 'preact-router';
 
 export default function HomePage() {
   const handleClick = () => {
-    localStorage.setItem('shouldPlayMusic', 'true');
     route('/dashboard');
   };
 

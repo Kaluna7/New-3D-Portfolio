@@ -1,6 +1,6 @@
 export function Navbar() {
   return (
-    <div className="fixed top-8 left-1/2 -translate-x-1/2 w-[60rem] bg-black p-6 text-white rounded-4xl">
+    <div className="fixed top-8 left-1/2 -translate-x-1/2 w-[50rem] bg-black p-5 text-[#34E0A1] rounded-4xl font-bold">
       <ul className="flex flex-row gap-10 items-center justify-center list-none">
         <li><a href="">Home</a></li>
         <li><a href="">About</a></li>

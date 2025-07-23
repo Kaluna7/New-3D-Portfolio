@@ -1,5 +1,6 @@
-import HomePage from "./Pages/Home Page/HomePage";
 import Dashboard from "./Pages/Dashboard/Dashboard";
+import { Navbar } from "./components/Navbar";
+import About from "./Pages/About/About";
 import { Router } from "preact-router";
 
 export function App() {
@@ -7,10 +8,9 @@ export function App() {
 
   return (
     <div>
-      <Router>
-        <HomePage path="/" />
-        <Dashboard path="/dashboard" />
-      </Router>
+      <Navbar />
+      <Dashboard />
+      <About />
     </div>
   )
 }

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
 :root{
-    background-image: url(../assets/images/bga.jpg);
+    background-image: black;
+}
+
+body {
+    background-color: black;
 }

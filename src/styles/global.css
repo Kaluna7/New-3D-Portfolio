@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
-:root{
-    background-image: black;
-}
-
 body {
     background-color: black;
+    font-family: "Pixelify Sans";
+}
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-opensans: "Open Sans", sans-serif;
 }

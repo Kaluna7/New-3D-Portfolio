@@ -2,7 +2,8 @@ export function Button({ label, link }) {
   return (
     <a 
       href={link}
-      className="px-4 py-2 bg-green-400 text-white rounded hover:bg-green-600"
+      className="p-2 bg-yellow-300 text-black border-2 border-black font-semibold
+                 shadow-[4px_4px_0_#000] transition-transform hover:translate-y-0.5 rounded-tr-md"
     >
       {label}
     </a>

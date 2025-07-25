@@ -26,9 +26,9 @@ export default function About(){
     // });
 
     return(
-        <div className="text-white h-screen mt-10 flex-col relative px-10">
+        <div className="text-white h-screen mt-10 flex-col relative">
             <div className="flex items-center justify-center">
-                <div className="bg-[url('/images/wood-bg.png')] bg-contain bg-center w-fit h-fit bg-no-repeat">
+                <div className="bg-[url('/images/wood-bg.png')] bg-contain bg-center w-fit h-fit bg-no-repeat hover:opacity-80 cursor-pointer">
                 <h1 className="text-[2rem] p-6">About Me</h1>
                 </div>
             </div>

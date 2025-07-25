@@ -6,10 +6,10 @@ import { Button } from '../../components/Button';
 
 export default function Dashboard(){
   return(
-    <section id='Dashboard' className="px-10">  
+    <section id='Dashboard'>  
       <div className="bg-[url('/images/pixel-waterfall.gif')] bg-cover bg-center h-[35rem] mt-[8rem] rounded-4xl p-10 text-white">
         <div className='w-[44rem] h-fit py-10 '>
-        <p className='text-[12px] font-extralight '>WELCOME TO MY WORLD</p>
+        <p className='text-[16px] font-extralight'>WELCOME TO MY WORLD</p>
         <h1 className='text-[3rem] font-extrabold font-pixelify'>Hi,<span className='bg-gradient-to-t from-pink-700 via-pink-700 to-pink-700 bg-clip-text text-transparent'>I'm Kaluna Gadyanga <br/>a Software Engineer</span></h1>
         </div>
         <div className='flex flex-row gap-6 mb-10'>
@@ -28,13 +28,16 @@ export default function Dashboard(){
           <div className='flex flex-col gap-2'>
             <p>FRIEND WITH ME</p>
         <ul className='list-none flex flex-row gap-2'>
-          <li className='bg-green-400 h-fit w-fit p-3 rounded-lg cursor-pointer'>
+          <li className='bg-green-400 h-fit w-fit p-3 rounded-lg cursor-pointer border-black font-semibold
+                 shadow-[4px_4px_0_#000] transition-transform hover:translate-y-0.5'>
             <a href=''><FaFacebookF /></a>
           </li>
-          <li className='bg-green-400 h-fit w-fit p-3 rounded-lg'>
+          <li className='bg-green-400 h-fit w-fit p-3 rounded-lg border-black font-semibold
+                 shadow-[4px_4px_0_#000] transition-transform hover:translate-y-0.5'>
               <a href=''><AiFillInstagram /></a>
           </li>
-            <li className='bg-green-400 h-fit w-fit p-3 rounded-lg'>
+            <li className='bg-green-400 h-fit w-fit p-3 rounded-lg border-black font-semibold
+                 shadow-[4px_4px_0_#000] transition-transform hover:translate-y-0.5'>
               <a href=''><FaLinkedinIn /></a>
           </li>
           </ul>
@@ -43,10 +46,12 @@ export default function Dashboard(){
           <div className='flex flex-col gap-2'>
             <p>FOR WORK</p>
               <ul className='list-none flex flex-row gap-2'>
-             <li className='bg-green-400 h-fit w-fit p-3 rounded-lg'>
+             <li className='bg-green-400 h-fit w-fit p-3 rounded-lg border-black font-semibold
+                 shadow-[4px_4px_0_#000] transition-transform hover:translate-y-0.5'>
               <a href=''><FaGithub /></a>
             </li>
-            <li className='bg-green-400 h-fit w-fit p-3 rounded-lg'>
+            <li className='bg-green-400 h-fit w-fit p-3 rounded-lg border-black font-semibold
+                 shadow-[4px_4px_0_#000] transition-transform hover:translate-y-0.5'>
                <a href=''><FaLinkedinIn /></a>
             </li>
           </ul>

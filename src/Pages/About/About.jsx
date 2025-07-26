@@ -1,10 +1,15 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ButtonAbout } from "../../components/Button";
+import { FirstAboutCard } from "../../components/AboutCard";
+import { SecondAboutCard } from "../../components/AboutCard";
 
 
 export default function About(){
+
+    const [showFirstData , setFirstData] = useState(false);
+    const [showSecondData , setSecondData] = useState(false);
 
 
     // useEffect(() => {
@@ -33,13 +38,21 @@ export default function About(){
                 </div>
             </div>
             <div className="h-[29rem] w-full bg-[url('/images/bg-about.jpg')] bg-contain bg-center rounded-2xl">
+            {showFirstData && (
+                <FirstAboutCard/>
+            )}
+            {showSecondData && (
+                <SecondAboutCard/>
+            )}
             </div>
         <div className="flex flex-row gap-10 bottom-20 absolute left-1/2 -translate-x-1/2">
                     <ButtonAbout
                    image={"/images/Left.png"}
+                   onAction={() => {setFirstData(true);  setSecondData(false);}}
                    />
                    <ButtonAbout
                    image={"/images/Right.png"}
+                   onAction={() => {setSecondData(true); setFirstData(false);}}
                    />
                 </div>
         </div>

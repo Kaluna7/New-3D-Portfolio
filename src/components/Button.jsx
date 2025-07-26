@@ -13,10 +13,14 @@ export function Button({ label, link }) {
 
 import { useState } from "react";
 
-export function ButtonAbout({ image }) {
+export function ButtonAbout({ image, onAction }) {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
+    if(onAction){
+      onAction();
+      console.log('clicked');
+    }
     setClicked(true);
     setTimeout(() => {
       setClicked(false);
